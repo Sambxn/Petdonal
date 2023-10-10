@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contestant Voting</title>
+    <style>
+        /* CSS styles for the voting form */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .voting-form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .voting-form h2 {
+            font-size: 24px;
+        }
+
+        .contestant-option {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .contestant-name {
+            flex: 1;
+        }
+
+        .vote-button {
+            background-color: #ffcccb;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="voting-form">
+        <h2>Vote for Your Favorite Contestant</h2>
+
+        <div class="contestant-option">
+            <label class="contestant-name" for="contestant1">Contestant 1</label>
+            <input type="radio" name="voting" id="contestant1" value="Contestant 1">
+        </div>
+
+        <div class="contestant-option">
+            <label class="contestant-name" for="contestant2">Contestant 2</label>
+            <input type="radio" name="voting" id="contestant2" value="Contestant 2">
+        </div>
+
+        <!-- Add more contestants as needed -->
+
+        <button class="vote-button" onclick="submitVote()">Vote</button>
+    </div>
+
+    <script>
+        // JavaScript function to handle the form submission
+        function submitVote() {
+            const selectedOption = document.querySelector('input[name="voting"]:checked');
+            if (selectedOption) {
+                const selectedContestant = selectedOption.value;
+                alert(`You have voted for ${selectedContestant}. Thank you for your vote!`);
+            } else {
+                alert('Please select a contestant before voting.');
+            }
+        }
+    </script>
+</body>
+</html>

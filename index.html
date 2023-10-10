@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamourous Beauties</title>
+    <style>
+        /* Internal CSS styles here */
+
+        /* Set a background color for the entire body */
+        body {
+            background-color: #f0f0f0; /* Replace with your desired background color */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            font-family: Arial, sans-serif; /* Define a fallback font */
+        }
+
+        /* Example styles for header */
+        header {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+            width: inherit;
+        }
+
+        /* Container for contestants using flexbox */
+        .contestants-container {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr); /* Responsive grid */
+            gap: 5px
+            max-width: 1200px; /* Limit container width for readability */
+        }
+       
+
+        /* Example styles for contestant profiles */
+        .contestant {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            background-color: #ffe4e1; /* Eye-catching background color */
+        }
+
+        .contestant img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .contestant h2 {
+            margin-top: 10px;
+        }
+
+        .contestant p {
+            margin-top: 5px;
+        }
+
+        /* Example styles for other sections */
+        .section {
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Button styles */
+        .vote-button {
+            background-color: #ffcccb;
+            padding: 16px 32px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            font-size: 35px;
+            text-decoration: none;
+            margin: 0 auto;
+            display: block; /* Center button */
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Mobile layout */
+        @media screen and (max-width: 600px) {
+            .contestants-container {
+                grid-template-columns: repeat(2, 2fr); /* Stack contestants vertically */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Glamourous Beauties: Meet Our Contestants</h1>
+    </header>
+
+    <div class="contestants-container">
+        <div class="contestant">
+            <input type="checkbox" id="contestant1" disabled>
+            <label for="contestant1">
+                <img src="img/1.jpg" alt="Contestant 1">
+                <h2>Daniella</h2>
+                <p>Age: 25</p>
+                <p>Bio: Daniella is a talented and confident contestant with a passion for modeling. She has years of experience in the industry and dreams of becoming a top fashion model.</p>
+            </label>
+        </div>
+
+        <div class="contestant">
+            <input type="checkbox" id="contestant2" checked>
+            <label for="contestant2">
+                <img src="img/2.jpg" alt="Contestant 2">
+                <h2>Loretta</h2>
+                <p>Age: 28</p>
+                <p>Bio: Loretta is a charismatic and determined contestant. She loves the spotlight and is known for her captivating runway presence.</p>
+            </label>
+        </div>
+
+        <div class="contestant">
+            <input type="checkbox" id="contestant3" disabled>
+            <label for="contestant3">
+                <img src="img/3.jpg" alt="Contestant 3">
+                <h2>Emily</h2>
+                <p>Age: 22</p>
+                <p>Bio: Emily is a rising star in the fashion industry. She combines elegance and grace with a unique sense of style.</p>
+            </label>
+        </div>
+
+        <div class="contestant">
+            <input type="checkbox" id="contestant4" disabled>
+            <label for="contestant4">
+                <img src="img/4.jpg" alt="Contestant 4">
+                <h2>Kate</h2>
+                <p>Age: 30</p>
+                <p>Bio: Kate is a versatile model with experience in various fashion genres. she is confidence and charm make her a crowd favorite.</p>
+            </label>
+        </div>
+        
+    </div>
+
+    <a href="d.html" class="vote-button">Vote Now</a>
+
+    <div class="section" style="background-color: #ffa07a;"> <!-- Eye-catching background color -->
+        <h2>Judging Criteria</h2>
+        <p>Our judges will evaluate contestants based on beauty, personality, and talent.</p>
+    </div>
+
+    <div class="section" style="background-color: #98fb98;"> <!-- Eye-catching background color -->
+        <h2>How to Vote</h2>
+        <p>Follow these steps to cast your vote:</p>
+        <ol>
+            <li>Visit our voting page.</li>
+            <li>Select your favorite contestant.</li>
+            <li>Click the <strong>"Vote Now"</strong> button.</li>
+        </ol>
+    </div>
+
+    <div class="section" style="background-color: #87ceeb;"> <!-- Eye-catching background color -->
+        <h2>About Us</h2>
+        <p>We are an organization dedicated to promoting beauty and talent. Learn more about our mission and values.</p>
+    </div>
+
+    <!-- Additional Sections -->
+    <div class="section" style="background-color: #ff69b4;"> <!-- Eye-catching background color -->
+        <h2>Event Details</h2>
+        <p>Date: November 15, 2023</p>
+        <p>Location: Beautiful Venue, City</p>
+    </div>
+
+   <div class="section" style="background-color: #ffc0cb;"> <!-- Eye-catching background color -->
+        <h2>Our Sponsors and Partners</h2>
+        <p>Fashion Glamours</p>
+        <p>Models Hunters</p>
+        <!-- Add more sponsors/partners as needed -->
+    </div>
+
+    <div class="section" style="background-color: #f0e68c;"> <!-- Eye-catching background color -->
+        <h2>Frequently Asked Questions</h2>
+        <p>Q: How can I buy tickets?</p>
+        <p>A: Tickets can be purchased online through our website.</p>
+        <!-- Add more FAQs as needed -->
+        <p>Sales will be open soon</p>
+    </div>
+
+    <div class="section" style="background-color: #ff6347;"> <!-- Eye-catching background color -->
+        <h2>Contact Us</h2>
+        <p>Email: info@beautycontest.com</p>
+        <p>Phone: +1-346-456-7890</p>
+    </div>
+
+    <!-- Add other sections and footer as needed -->
+
+    <footer>
+        <p>&copy; 2023 Glamourous Beauties</p>
+    </footer>
+</body>
+</html>
